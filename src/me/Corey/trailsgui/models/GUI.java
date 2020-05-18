@@ -27,6 +27,12 @@ public class GUI {
 		item.setItemMeta(meta);
 		inv.setItem(5, item);
 		
+		item = new ItemStack(Material.BARRIER);
+		meta = item.getItemMeta();
+		meta.setDisplayName(ChatColor.DARK_RED + "Remove Trail");
+		item.setItemMeta(meta);
+		inv.setItem(8, item);
+		
 		setInventory(inv);
 	}
 	

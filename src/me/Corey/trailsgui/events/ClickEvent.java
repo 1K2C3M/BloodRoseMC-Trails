@@ -48,6 +48,11 @@ public class ClickEvent implements Listener {
 			player.closeInventory();
 			player.updateInventory();
 			break;
+		case 8:
+			particle.setID(0);
+			player.closeInventory();
+			player.updateInventory();
+			break;
 		default:
 			break;
 		}
