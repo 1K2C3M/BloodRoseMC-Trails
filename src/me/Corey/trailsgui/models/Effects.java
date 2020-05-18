@@ -41,4 +41,30 @@ public class Effects {
 			
 		}, 0, 1);
 	}
+
+		public void startLava() {
+			taskID = Bukkit.getScheduler().scheduleSyncRepeatingTask(Main.getPlugin(Main.class), new Runnable() {
+			
+				double var = 0;
+				Location loc, first, second;
+				ParticleData particle = new ParticleData(player.getUniqueId());
+				
+				@Override
+				public void run() {
+					if (!particle.hasID()) {
+						particle.setID(taskID);
+					}
+					
+					var += Math.PI / 16;
+					
+					loc = player.getLocation();
+					first = loc.clone().add(Math.cos(var), Math.sin(var) + 1, Math.sin(var));
+					second = loc.clone().add(Math.cos(var + Math.PI), Math.sin(var) + 1, Math.sin(var + Math.PI));
+					
+					player.getWorld().spawnParticle(Particle.DRIP_LAVA, first, 0);
+					player.getWorld().spawnParticle(Particle.FLAME, second, 0);
+				}
+				
+			}, 0, 1);
+	}
 }
