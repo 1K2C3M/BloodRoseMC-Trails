@@ -33,6 +33,12 @@ public class GUI {
 		item.setItemMeta(meta);
 		inv.setItem(8, item);
 		
+		item = new ItemStack(Material.LAVA_BUCKET);
+		meta = item.getItemMeta();
+		meta.setDisplayName(ChatColor.YELLOW + "Lava Trail");
+		item.setItemMeta(meta);
+		inv.setItem(1, item);
+		
 		setInventory(inv);
 	}
 	
