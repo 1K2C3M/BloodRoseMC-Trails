@@ -21,6 +21,12 @@ public class GUI {
 		item.setItemMeta(meta);
 		inv.setItem(3, item);
 		
+		item = new ItemStack(Material.LAVA_BUCKET);
+		meta = item.getItemMeta();
+		meta.setDisplayName(ChatColor.GOLD + "Lava Trail");
+		item.setItemMeta(meta);
+		inv.setItem(1, item);
+		
 		item = new ItemStack(Material.ENDER_EYE);
 		meta = item.getItemMeta();
 		meta.setDisplayName(ChatColor.DARK_PURPLE + "Ender Eye Trail");
@@ -32,12 +38,6 @@ public class GUI {
 		meta.setDisplayName(ChatColor.DARK_RED + "Remove Trail");
 		item.setItemMeta(meta);
 		inv.setItem(8, item);
-		
-		item = new ItemStack(Material.LAVA_BUCKET);
-		meta = item.getItemMeta();
-		meta.setDisplayName(ChatColor.YELLOW + "Lava Trail");
-		item.setItemMeta(meta);
-		inv.setItem(1, item);
 		
 		setInventory(inv);
 	}
