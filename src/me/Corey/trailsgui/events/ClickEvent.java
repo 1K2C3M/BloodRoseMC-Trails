@@ -38,6 +38,11 @@ public class ClickEvent implements Listener {
 		Effects trails = new Effects(player);
 		
 		switch(event.getSlot()) {
+		case 0:
+			trails.startEnchant();
+			player.closeInventory();
+			player.updateInventory();
+			break;
 		case 1:
 			trails.startLava();
 			player.closeInventory();
