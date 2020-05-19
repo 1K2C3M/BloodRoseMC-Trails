@@ -21,6 +21,12 @@ public class GUI {
 		item.setItemMeta(meta);
 		inv.setItem(3, item);
 		
+		item = new ItemStack(Material.ENCHANTING_TABLE);
+		meta = item.getItemMeta();
+		meta.setDisplayName(ChatColor.DARK_PURPLE + "Enchantment Trail");
+		item.setItemMeta(meta);
+		inv.setItem(0, item);
+		
 		item = new ItemStack(Material.LAVA_BUCKET);
 		meta = item.getItemMeta();
 		meta.setDisplayName(ChatColor.GOLD + "Lava Trail");
