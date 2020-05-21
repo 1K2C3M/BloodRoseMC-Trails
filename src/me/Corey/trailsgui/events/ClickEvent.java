@@ -48,6 +48,11 @@ public class ClickEvent implements Listener {
 			player.closeInventory();
 			player.updateInventory();
 			break;
+		case 2:
+			trails.startCloud();
+			player.closeInventory();
+			player.updateInventory();
+			break;
 		case 3:
 			trails.startTotem();
 			player.closeInventory();
