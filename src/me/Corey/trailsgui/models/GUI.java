@@ -33,6 +33,12 @@ public class GUI {
 		item.setItemMeta(meta);
 		inv.setItem(1, item);
 		
+		item = new ItemStack(Material.WHITE_WOOL);
+		meta = item.getItemMeta();
+		meta.setDisplayName(ChatColor.WHITE + "Cloud Trail");
+		item.setItemMeta(meta);
+		inv.setItem(2, item);
+		
 		item = new ItemStack(Material.ENDER_EYE);
 		meta = item.getItemMeta();
 		meta.setDisplayName(ChatColor.DARK_PURPLE + "Ender Eye Trail");
